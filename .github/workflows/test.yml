@@ -1,0 +1,13 @@
+name: test
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        env:
+          A: null
+          B: "null"
+        run: |
+          echo "$A"
+          echo "$B"
